@@ -1,0 +1,253 @@
+.footer {
+  background: #0D3B43;
+  color: #FFFFFF;
+  padding: 75px 6% 25px;
+}
+
+.footer-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* MAIN FOOTER */
+
+.footer-main {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 1fr 1.2fr;
+  gap: 55px;
+  padding-bottom: 65px;
+}
+
+/* BRAND */
+
+.footer-brand {
+  max-width: 330px;
+}
+
+.footer-logo {
+  display: inline-block;
+  color: #FFFFFF;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 31px;
+  font-weight: 800;
+  letter-spacing: -1.8px;
+  text-decoration: none;
+}
+
+.footer-logo span {
+  color: #F4C430;
+}
+
+.footer-brand-description {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 19px 0 23px;
+}
+
+.footer-brand-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-brand-note span {
+  color: #F4C430;
+  font-size: 19px;
+}
+
+.footer-brand-note p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 11px;
+  margin: 0;
+}
+
+/* FOOTER COLUMNS */
+
+.footer-column h3 {
+  color: #F4C430;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  margin: 7px 0 23px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-column a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #F4C430;
+}
+
+/* MARKETPLACE MESSAGE */
+
+.footer-marketplace {
+  padding-left: 25px;
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.footer-marketplace-icon {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0D3B43;
+  background: #F4C430;
+  border-radius: 50%;
+  margin-bottom: 18px;
+}
+
+.footer-marketplace h3 {
+  color: #FFFFFF;
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 20px;
+}
+
+.footer-shop-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #F4C430;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: gap 0.3s ease;
+}
+
+.footer-shop-link:hover {
+  gap: 15px;
+}
+
+/* BOTTOM BAR */
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-top: 23px;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 11px;
+}
+
+/* BACK TO TOP */
+
+.footer-bottom-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 11px 17px;
+  border: 1px solid rgba(244, 196, 48, 0.65);
+  border-radius: 4px;
+  color: #F4C430;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  background: #F4C430;
+  border-color: #F4C430;
+  color: #0D3B43;
+}
+
+.footer-bottom-links a svg {
+  transition: transform 0.3s ease;
+}
+
+.footer-bottom-links a:hover svg {
+  transform: translateY(-3px);
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .footer-main {
+    grid-template-columns: 1.3fr 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-marketplace {
+    grid-column: 1 / -1;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    padding: 30px 0 0;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .footer {
+    padding: 60px 6% 25px;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 25px;
+    padding-bottom: 45px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+
+  .footer-marketplace {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-copyright {
+    flex-wrap: wrap;
+    gap: 8px 20px;
+  }
+
+  .footer-bottom-links a {
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-main {
+    gap: 35px 15px;
+  }
+
+  .footer-column a {
+    font-size: 11px;
+  }
+}

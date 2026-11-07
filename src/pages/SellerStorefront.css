@@ -1,0 +1,398 @@
+/* SELLER STOREFRONT */
+
+.seller-storefront {
+  background: #F7F6F0;
+  color: #0D3B43;
+}
+
+/* HERO */
+
+.seller-storefront-hero {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 75px;
+  padding: 90px 8%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.seller-storefront-hero-content {
+  max-width: 620px;
+}
+
+.seller-storefront-eyebrow {
+  display: inline-block;
+  color: #008B99;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  margin-bottom: 22px;
+}
+
+.seller-storefront-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 5vw, 68px);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  margin: 0 0 25px;
+}
+
+.seller-storefront-hero h1 span,
+.seller-storefront-section-heading h2 span,
+.seller-storefront-how-content h2 span,
+.seller-storefront-registration h2 span {
+  color: #008B99;
+  font-style: italic;
+}
+
+.seller-storefront-hero-content > p {
+  max-width: 500px;
+  color: #5A6B7C;
+  font-size: 15px;
+  line-height: 1.9;
+  margin: 0 0 32px;
+}
+
+.seller-storefront-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #008B99;
+  color: #FFFFFF;
+  padding: 16px 23px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.seller-storefront-primary-button:hover {
+  background: #0D3B43;
+  transform: translateY(-2px);
+}
+
+.seller-storefront-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #5A6B7C;
+  font-size: 12px;
+  margin-top: 24px;
+}
+
+.seller-storefront-note svg {
+  color: #008B99;
+}
+
+/* HERO IMAGE */
+
+.seller-storefront-hero-visual {
+  position: relative;
+  max-width: 560px;
+  width: 100%;
+  justify-self: end;
+}
+
+.seller-storefront-hero-visual > img {
+  display: block;
+  width: 100%;
+  height: 530px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.seller-storefront-image-card {
+  position: absolute;
+  bottom: 25px;
+  left: -35px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #FFFFFF;
+  padding: 18px 22px;
+  box-shadow: 0 12px 35px rgba(13, 59, 67, 0.12);
+  border-radius: 4px;
+}
+
+.seller-storefront-image-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: #F4C430;
+  color: #0D3B43;
+  border-radius: 50%;
+}
+
+.seller-storefront-image-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.seller-storefront-image-card strong {
+  font-size: 13px;
+}
+
+.seller-storefront-image-card span:last-child {
+  color: #5A6B7C;
+  font-size: 11px;
+}
+
+/* BENEFITS */
+
+.seller-storefront-benefits {
+  padding: 100px 8%;
+  background: #FFFFFF;
+}
+
+.seller-storefront-section-heading {
+  max-width: 650px;
+  margin-bottom: 50px;
+}
+
+.seller-storefront-section-heading h2,
+.seller-storefront-how-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(35px, 4vw, 48px);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.seller-storefront-section-heading > p,
+.seller-storefront-how-content > p {
+  color: #5A6B7C;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 550px;
+}
+
+.seller-storefront-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.seller-storefront-benefit-card {
+  padding: 30px;
+  border: 1px solid #E8E1D8;
+  background: #F7F6F0;
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.seller-storefront-benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(13, 59, 67, 0.08);
+}
+
+.seller-storefront-benefit-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: #008B99;
+  background: rgba(0, 139, 153, 0.1);
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.seller-storefront-benefit-card h3 {
+  font-size: 17px;
+  margin: 0 0 12px;
+}
+
+.seller-storefront-benefit-card p {
+  color: #5A6B7C;
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* HOW IT WORKS */
+
+.seller-storefront-how-it-works {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding: 100px 8%;
+}
+
+.seller-storefront-how-content {
+  max-width: 520px;
+}
+
+.seller-storefront-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.seller-storefront-step {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 25px 0;
+  border-bottom: 1px solid #DADFD9;
+}
+
+.seller-storefront-step:first-child {
+  padding-top: 0;
+}
+
+.seller-storefront-step-number {
+  color: #008B99;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.seller-storefront-step p {
+  color: #0D3B43;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* REGISTRATION SECTION */
+
+.seller-storefront-registration {
+  background: #0D3B43;
+  color: #FFFFFF;
+  padding: 85px 8%;
+  text-align: center;
+}
+
+.seller-storefront-registration-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.seller-storefront-registration .seller-storefront-eyebrow {
+  color: #F4C430;
+}
+
+.seller-storefront-registration h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(35px, 4vw, 50px);
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.seller-storefront-registration h2 span {
+  color: #F4C430;
+}
+
+.seller-storefront-registration-content > p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.seller-storefront-registration-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 15px 20px;
+  border: 1px solid rgba(244, 196, 48, 0.45);
+  color: #F4C430;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .seller-storefront-hero {
+    gap: 40px;
+    padding: 70px 6%;
+  }
+
+  .seller-storefront-hero-visual > img {
+    height: 430px;
+  }
+
+  .seller-storefront-benefits,
+  .seller-storefront-how-it-works {
+    padding: 75px 6%;
+  }
+
+  .seller-storefront-how-it-works {
+    gap: 45px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .seller-storefront-hero {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 55px 6%;
+  }
+
+  .seller-storefront-hero h1 {
+    font-size: 43px;
+  }
+
+  .seller-storefront-hero-visual {
+    justify-self: center;
+  }
+
+  .seller-storefront-hero-visual > img {
+    height: 380px;
+  }
+
+  .seller-storefront-image-card {
+    left: 12px;
+    bottom: 15px;
+    padding: 13px;
+  }
+
+  .seller-storefront-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .seller-storefront-benefits,
+  .seller-storefront-how-it-works {
+    padding: 65px 6%;
+  }
+
+  .seller-storefront-how-it-works {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .seller-storefront-registration {
+    padding: 65px 6%;
+  }
+}
+
+@media (max-width: 400px) {
+  .seller-storefront-hero h1 {
+    font-size: 36px;
+  }
+
+  .seller-storefront-hero-visual > img {
+    height: 320px;
+  }
+
+  .seller-storefront-image-card {
+    gap: 10px;
+  }
+
+  .seller-storefront-image-card strong {
+    font-size: 11px;
+  }
+}
